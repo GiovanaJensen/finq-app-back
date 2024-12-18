@@ -14,6 +14,8 @@ import { finishQuiz } from './routes/quiz/finish-quiz';
 import { createCategory } from './routes/categories/create-category';
 import { listCategoryById } from './routes/categories/list-category-by-id';
 import { getCategories } from './routes/categories/list-category';
+import { addUsersToLeague } from './routes/ranking/create-league';
+import { listUserRanking } from './routes/ranking/list-users';
 
 const app = fastify();
 
@@ -37,6 +39,8 @@ app.register(finishQuiz)
 app.register(createCategory)
 app.register(listCategoryById)
 app.register(getCategories)
+app.register(addUsersToLeague)
+app.register(listUserRanking)
 
 app.listen({
     host: "0.0.0.0",
