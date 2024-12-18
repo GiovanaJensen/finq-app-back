@@ -65,8 +65,7 @@ export async function sendVerificationCode(app: FastifyInstance) {
             <p>Your verification code is ${code}</p>
             `
         })
-        console.log(nodemailer.getTestMessageUrl(message))
-        return { message: "Code sent to your email" };
+        return { message: "Code sent to your email", link: nodemailer.getTestMessageUrl(message) };
       } catch (err) {
         return { message: "Sorry. A problem happened and we couldn't send a code to your email" };
       }
