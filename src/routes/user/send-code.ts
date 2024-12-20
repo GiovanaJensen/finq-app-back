@@ -67,7 +67,8 @@ export async function sendVerificationCode(app: FastifyInstance) {
         })
         return { message: "Code sent to your email", link: nodemailer.getTestMessageUrl(message) };
       } catch (err) {
-        return { message: "Sorry. A problem happened and we couldn't send a code to your email" };
+        console.error("Erro ao enviar e-mail:", err);
+        return { message: "Sorry. A problem happened and we couldn't send a code to your email", error: err };
       }
     } else if (isPhone) {
       try {

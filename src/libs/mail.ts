@@ -1,15 +1,14 @@
 import nodemailer from 'nodemailer'
 
 export async function getMailClient() {
-    const account = await nodemailer.createTestAccount();
 
     const transporter = nodemailer.createTransport({
-        host: 'smtp.ethereal.email',
+        host: 'smtp.gmail.com',
         port: 587,
         secure: false,
         auth: {
-            user: account.user,
-            pass: account.pass
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASSWORD
         }
     })
 
