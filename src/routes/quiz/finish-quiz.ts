@@ -42,6 +42,7 @@ export async function finishQuiz(app: FastifyInstance) {
         data: {
           lifes: newLifes,
           dollars: user.dollars + 10,  
+          experience: user.experience + 125,
           streak_count: newStreakCount, 
           last_login_date: today
         }
