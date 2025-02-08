@@ -29,15 +29,12 @@ export async function addUsersToLeague(app: FastifyInstance) {
                 where: { user_id: userId }
             });
 
-            console.log(existingLevel)
-
             if (existingLevel) {
                 return prisma.level.update({
                     where: { id: existingLevel.id },
                     data: { level }
                 });
             } else {
-                // Cria um novo nível
                 return prisma.level.create({
                     data: {
                         level,
