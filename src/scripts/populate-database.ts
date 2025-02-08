@@ -16,6 +16,7 @@ async function main() {
       description: 'Perguntas sobre eventos históricos e figuras importantes',
     }
   });
+  
 
   const question1 = await prisma.question.create({
     data: {
