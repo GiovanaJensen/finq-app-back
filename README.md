@@ -1,6 +1,6 @@
-# Web API de Vagas de Estágio - Fatec
+# Web API do Finq App
 
-Esta é uma Web API desenvolvida em **Node.js** para gerenciar as vagas de estágio direcionadas para os alunos da **Fatec**. A API utiliza o **Prisma** como ORM (Object Relational Mapping) para interagir com o banco de dados e fornecer uma interface RESTful para o aplicativo de vagas.
+Esta é uma Web API desenvolvida em **Node.js** para gerenciar o app Finq. A API utiliza o **Prisma** como ORM (Object Relational Mapping) para interagir com o banco de dados e fornecer uma interface RESTful para o aplicativo de vagas.
 
 ## Tecnologias Utilizadas
 
@@ -10,13 +10,6 @@ Esta é uma Web API desenvolvida em **Node.js** para gerenciar as vagas de está
 - **SQL**: Banco de dados relacional utilizado para armazenar as informações das vagas e usuários.
 - **JWT**: JSON Web Tokens para autenticação e controle de acesso.
 - **Dotenv**: Biblioteca para gerenciar variáveis de ambiente.
-
-## Funcionalidades
-
-- **Cadastro de Vagas**: Permite o cadastro de vagas de estágio que podem ser acessadas pelos alunos da Fatec.
-- **Busca de Vagas**: Filtragem e busca de vagas com base em critérios como área de atuação, disponibilidade e requisitos.
-- **Autenticação de Usuários**: Permite que os alunos se registrem, façam login e acessem as vagas de forma segura.
-- **Gerenciamento de Vagas**: Admins podem adicionar, editar e remover vagas de estágio.
 
 ## Instalação
 
